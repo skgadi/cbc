@@ -1,3 +1,4 @@
+
 html {
   height: 100%;
   width: 100%;
@@ -76,4 +77,39 @@ body {
   text-align: center;
 }
 
+.gsk-content-section {
+  margin: 10px;
+  border-radius: 6px;
+  overflow: hidden;
+  perspective: 1px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
 
+.gsk-content-section > div:first-child {
+  cursor: pointer;
+  padding: 8px;
+}
+
+
+html, .unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.zero-gap {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+table.inp-table tr td:first-child, table.inp-table tr td:last-child {
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+}

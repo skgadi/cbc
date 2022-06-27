@@ -2,9 +2,11 @@ const languages = {
   en: {
     name: "English",
     flag: "us" 
-  },
-  es: {
+  }, es: {
     name: "Español",
     flag: "mx"
+  }, fr: {
+    name: "Français",
+    flag: "fr"
   }
 }
