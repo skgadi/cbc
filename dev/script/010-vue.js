@@ -10,12 +10,12 @@ const app = createApp({
   },
   watch: {
     's.nP' (newVal) {
-      this.completeMainInfo();
+      this.mainCalculations();
       this.saveSettings();
     },
     's.vol' (newVal) {
       this.s.vol = getValidInput(newVal, 0.001, Infinity);
-      this.completeMainInfo();
+      this.mainCalculations();
       this.saveSettings();
     },
     's.f' (newVal) {
@@ -24,12 +24,12 @@ const app = createApp({
     },
     's.w' (newVal) {
       this.s.w = getValidInput(newVal, 0.001, Infinity);
-      this.completeMainInfo();
+      this.mainCalculations();
       this.saveSettings();
     },
     's.cpf' (newVal) {
       this.s.cpf = getValidInput(newVal, 0.001, 1);
-      this.completeMainInfo();
+      this.mainCalculations();
       this.saveSettings();
     },
     's.sV': {
@@ -47,7 +47,7 @@ const app = createApp({
       this.saveSettings();
     }, saveSettings() {
       saveSettings(this.s);
-    }, completeMainInfo () {
+    }, mainCalculations () {
       this.s.s = this.s.w/this.s.cpf;
       this.s.q = Math.sqrt(Math.pow(this.s.s,2) - Math.pow(this.s.w,2));
       this.s.i =  this.s.s / this.s.vol / Math.sqrt(this.s.nP);
