@@ -65,6 +65,10 @@ const app = createApp({
       this.s.rQC = this.s.q + this.s.rpfs*this.s.rQ;
       let xc = Math.pow(this.s.vol,2) / this.s.rQC;
       this.s.c = 1e6 / (2 * Math.PI * this.s.f * xc);
+      xc = Math.pow(this.s.vol,2) / this.s.rQC * 3;
+      this.s.cD = 1e6 / (2 * Math.PI * this.s.f * xc);
+      xc = Math.pow(this.s.vol/Math.sqrt(3),2) / this.s.rQC * 3;
+      this.s.cS = 1e6 / (2 * Math.PI * this.s.f * xc);
     }, adjustRpf() {
       if (this.s.rpfs<0) {
         if (this.s.rpf<this.s.cpf) {
