@@ -15,7 +15,15 @@ body {
   body {
     width: 100%;
     height: 100%;
+    font-size: 12px !important;
   }
+  #gsk-app-toolbar {
+    height: 42.5px;
+  }
+  #gsk-app-toolbar>h1 {
+    font-size: 15px;
+  }
+  
 }
 
 @media only screen and (min-width: 900px) {
@@ -29,6 +37,12 @@ body {
     background-repeat: no-repeat;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+  #gsk-app-toolbar {
+    height: 50px;
+  }
+  #gsk-app-toolbar>h1 {
+    font-size: 20px;
+  }
 }
 
 #gsk-app {
@@ -36,12 +50,8 @@ body {
   overflow: hidden;
 }
 
-#gsk-app-toolbar {
-  height: 50px;
-}
 
 #gsk-app-toolbar>h1 {
-  font-size: 20px;
   font-weight: bold;
   padding: 0 0 0 10px;
 }
@@ -113,3 +123,6 @@ table.inp-table tr td:first-child, table.inp-table tr td:last-child {
   white-space: nowrap;
   vertical-align: middle;
 }
+
+
+
