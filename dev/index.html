@@ -71,7 +71,8 @@
                 </tr>
                 <tr>
                   <td>
-                    <select class="w3-bar-item w3-select w3-border w3-border-black w3-round" name="option" :title="l[s.sL][8]" v-model.number = "s.nP">
+                    <select class="w3-bar-item w3-select w3-border w3-border-black w3-round" name="option"
+                      :title="l[s.sL][8]" v-model.number="s.nP">
                       <option value="1">1-Φ</option>
                       <option value="3">3-Φ</option>
                     </select>
@@ -88,7 +89,8 @@
                 </tr>
                 <tr>
                   <td>
-                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number" :title="l[s.sL][9]" v-model.number = "s.vol">
+                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
+                      :title="l[s.sL][9]" v-model.number="s.vol">
                   </td>
                   <td>
                     <span>V</span>
@@ -103,7 +105,8 @@
                 </tr>
                 <tr>
                   <td>
-                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number" :title="l[s.sL][10]" v-model.number = "s.f">
+                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
+                      :title="l[s.sL][10]" v-model.number="s.f">
                   </td>
                   <td>
                     <span>Hz</span>
@@ -118,7 +121,8 @@
                 </tr>
                 <tr>
                   <td>
-                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number" :title="l[s.sL][11]" v-model.number = "s.w">
+                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
+                      :title="l[s.sL][11]" v-model.number="s.w">
                   </td>
                   <td>
                     <span>W</span>
@@ -133,7 +137,8 @@
                 </tr>
                 <tr>
                   <td>
-                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number" :title="l[s.sL][12]" v-model.number = "s.cpf" max="1" min="0">
+                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
+                      :title="l[s.sL][12]" v-model.number="s.cpf" max="1" min="0">
                   </td>
                   <td>
                     <span>{{l[s.sL][15]}}</span>
@@ -148,7 +153,8 @@
                 </tr>
                 <tr>
                   <td>
-                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number" :title="l[s.sL][13]" v-model.number = "s.q" disabled>
+                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
+                      :title="l[s.sL][13]" v-model.number="s.q" disabled>
                   </td>
                   <td>
                     <span>VAR</span>
@@ -163,7 +169,8 @@
                 </tr>
                 <tr>
                   <td>
-                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number" :title="l[s.sL][14]" v-model.number = "s.s" disabled>
+                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
+                      :title="l[s.sL][14]" v-model.number="s.s" disabled>
                   </td>
                   <td>
                     <span>VA</span>
@@ -178,7 +185,8 @@
                 </tr>
                 <tr>
                   <td>
-                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number" :title="l[s.sL][16]" v-model.number = "s.i" disabled>
+                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
+                      :title="l[s.sL][16]" v-model.number="s.i" disabled>
                   </td>
                   <td>
                     <span>A</span>
@@ -207,10 +215,13 @@
                 </tr>
                 <tr>
                   <td>
-                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number" :title="l[s.sL][18]" v-model.number = "s.rpf" min="0" max="1">
+                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
+                      :title="l[s.sL][18]" v-model.number="s.rpf" min="0" max="1">
                   </td>
                   <td>
-                    <select style="width: 90px;" v-if= "s.rpf != 1" class="w3-bar-item w3-select w3-border w3-border-black w3-round" name="option" :title="l[s.sL][18]" v-model.number = "s.rpfs">
+                    <select style="width: 90px;" v-if="s.rpf != 1"
+                      class="w3-bar-item w3-select w3-border w3-border-black w3-round" name="option"
+                      :title="l[s.sL][18]" v-model.number="s.rpfs">
                       <option value="1">{{l[s.sL][23]}}</option>
                       <option value="-1">{{l[s.sL][15]}}</option>
                     </select>
@@ -225,7 +236,8 @@
                 </tr>
                 <tr>
                   <td>
-                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number" :title="l[s.sL][27]" v-model.number = "s.rQ" disabled>
+                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
+                      :title="l[s.sL][27]" v-model.number="s.rQ" disabled>
                   </td>
                   <td>
                     <span>VAR</span>
@@ -240,7 +252,8 @@
                 </tr>
                 <tr>
                   <td>
-                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number" :title="l[s.sL][26]" v-model.number = "s.rS" disabled>
+                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
+                      :title="l[s.sL][26]" v-model.number="s.rS" disabled>
                   </td>
                   <td>
                     <span>VA</span>
@@ -255,7 +268,8 @@
                 </tr>
                 <tr>
                   <td>
-                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number" :title="l[s.sL][25]" v-model.number = "s.rI" disabled>
+                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
+                      :title="l[s.sL][25]" v-model.number="s.rI" disabled>
                   </td>
                   <td>
                     <span>A</span>
@@ -270,7 +284,8 @@
                 </tr>
                 <tr>
                   <td>
-                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number" :title="l[s.sL][19]" v-model.number = "s.rQC" disabled>
+                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
+                      :title="l[s.sL][19]" v-model.number="s.rQC" disabled>
                   </td>
                   <td>
                     <span>VAR</span>
@@ -285,7 +300,9 @@
                 </tr>
                 <tr>
                   <td>
-                    <input v-show="s.nP==1" class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number" :title="l[s.sL][20]" v-model.number = "s.c" disabled>
+                    <input v-show="s.nP==1"
+                      class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
+                      :title="l[s.sL][20]" v-model.number="s.c" disabled>
                   </td>
                   <td>
                     <span v-show="s.nP==1">&micro;F</span>
@@ -298,9 +315,10 @@
                   <td>
                   </td>
                 </tr>
-                <tr>
+                <tr v-if="s.nP==3">
                   <td>
-                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number" :title="l[s.sL][21]" v-model.number = "s.cD"  disabled>
+                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
+                      :title="l[s.sL][20] + ' ' + l[s.sL][21]" v-model.number="s.cD" disabled>
                   </td>
                   <td>
                     <span>&micro;F</span>
@@ -313,9 +331,10 @@
                   <td>
                   </td>
                 </tr>
-                <tr>
+                <tr v-if="s.nP==3">
                   <td>
-                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number" :title="l[s.sL][22]" v-model.number = "s.cS" disabled>
+                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
+                      :title="l[s.sL][20] + ' ' + l[s.sL][22]" v-model.number="s.cS" disabled>
                   </td>
                   <td>
                     <span>&micro;F</span>
@@ -326,6 +345,145 @@
             </div>
           </div>
         </div>
+
+
+        <div class="gsk-content-section">
+          <div class="w3-theme w3-bar" @click="s.sV[2] = !s.sV[2]">
+            <i class="fa-fw fa-solid" :class="(s.sV[2])?'fa-caret-down':'fa-caret-right'"></i>
+            <span>&nbsp;{{l[s.sL][28]}}</span>
+          </div>
+          <div v-show="s.sV[2]">
+            <div class="w3-panel">
+              <table class="w3-table inp-table">
+                <tr>
+                  <td>
+                    <span>{{l[s.sL][29]}}</span>
+                  </td>
+                  <td>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
+                      :title="l[s.sL][27]" v-model.number="s.ac" disabled>
+                  </td>
+                  <td>
+                    <span>&micro;F</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>{{l[s.sL][30]}}</span>
+                  </td>
+                  <td>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
+                      :title="l[s.sL][27]" v-model.number="s.av" disabled>
+                  </td>
+                  <td>
+                    <span>VAC</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>{{l[s.sL][31]}}</span>
+                  </td>
+                  <td>
+                  </td>
+                </tr>
+                <tr v-if="s.nP==1">
+                  <td>
+                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
+                      :title="l[s.sL][31]" v-model.number="s.ncs" disabled>
+                  </td>
+                  <td>
+                  </td>
+                </tr>
+                <tr  v-if="s.nP==3">
+                  <td>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;{{l[s.sL][21]}}</span>
+                  </td>
+                  <td>
+                  </td>
+                </tr>
+                <tr v-if="s.nP==3">
+                  <td>
+                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
+                      :title="l[s.sL][31] + ' ' + l[s.sL][21]" v-model.number="s.ncsd" disabled>
+                  </td>
+                  <td>
+                  </td>
+                </tr>
+                <tr  v-if="s.nP==3">
+                  <td>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;{{l[s.sL][22]}}</span>
+                  </td>
+                  <td>
+                  </td>
+                </tr>
+                <tr v-if="s.nP==3">
+                  <td>
+                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
+                      :title="l[s.sL][31] + ' ' + l[s.sL][22]" v-model.number="s.ncss" disabled>
+                  </td>
+                  <td>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>{{l[s.sL][32]}}</span>
+                  </td>
+                  <td>
+                  </td>
+                </tr>
+                <tr v-if="s.nP==1">
+                  <td>
+                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
+                      :title="l[s.sL][32]" v-model.number="s.ncp" disabled>
+                  </td>
+                  <td>
+                  </td>
+                </tr>
+                <tr  v-if="s.nP==3">
+                  <td>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;{{l[s.sL][21]}}</span>
+                  </td>
+                  <td>
+                  </td>
+                </tr>
+                <tr v-if="s.nP==3">
+                  <td>
+                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
+                      :title="l[s.sL][32] + ' ' + l[s.sL][21]" v-model.number="s.ncpd" disabled>
+                  </td>
+                  <td>
+                  </td>
+                </tr>
+                <tr  v-if="s.nP==3">
+                  <td>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;{{l[s.sL][22]}}</span>
+                  </td>
+                  <td>
+                  </td>
+                </tr>
+                <tr v-if="s.nP==3">
+                  <td>
+                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
+                      :title="l[s.sL][31] + ' ' + l[s.sL][22]" v-model.number="s.ncps" disabled>
+                  </td>
+                  <td>
+                  </td>
+                </tr>
+                
+              </table>
+            </div>
+          </div>
+        </div>
+
+
 
       </div>
       <div v-else>

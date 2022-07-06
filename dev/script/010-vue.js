@@ -47,6 +47,9 @@ const app = createApp({
       this.adjustRpf();
     }
   },
+  mounted() {
+    this.mainCalculations();
+  },
   methods: {
     changeLang(lang) {
       this.s.sL = lang;

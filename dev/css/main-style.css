@@ -124,7 +124,8 @@ table.inp-table tr td:last-child {
 }
 
 table.inp-table tr td {
-  padding: 0;
+  padding: 0 !important;
+  padding-left: 0 !important;
 }
 
 
