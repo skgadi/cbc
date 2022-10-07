@@ -387,97 +387,318 @@
                     <span>VAC</span>
                   </td>
                 </tr>
-                <tr>
-                  <td>
-                    <span>{{l[s.sL][31]}}</span>
-                  </td>
-                  <td>
-                  </td>
-                </tr>
-                <tr v-if="s.nP==1">
-                  <td>
-                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
-                      :title="l[s.sL][31]" v-model.number="s.ncs" disabled>
-                  </td>
-                  <td>
-                  </td>
-                </tr>
-                <tr  v-if="s.nP==3">
-                  <td>
-                    <span>&nbsp;&nbsp;&nbsp;&nbsp;{{l[s.sL][21]}}</span>
-                  </td>
-                  <td>
-                  </td>
-                </tr>
-                <tr v-if="s.nP==3">
-                  <td>
-                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
-                      :title="l[s.sL][31] + ' ' + l[s.sL][21]" v-model.number="s.ncsd" disabled>
-                  </td>
-                  <td>
-                  </td>
-                </tr>
-                <tr  v-if="s.nP==3">
-                  <td>
-                    <span>&nbsp;&nbsp;&nbsp;&nbsp;{{l[s.sL][22]}}</span>
-                  </td>
-                  <td>
-                  </td>
-                </tr>
-                <tr v-if="s.nP==3">
-                  <td>
-                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
-                      :title="l[s.sL][31] + ' ' + l[s.sL][22]" v-model.number="s.ncss" disabled>
-                  </td>
-                  <td>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <span>{{l[s.sL][32]}}</span>
-                  </td>
-                  <td>
-                  </td>
-                </tr>
-                <tr v-if="s.nP==1">
-                  <td>
-                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
-                      :title="l[s.sL][32]" v-model.number="s.ncp" disabled>
-                  </td>
-                  <td>
-                  </td>
-                </tr>
-                <tr  v-if="s.nP==3">
-                  <td>
-                    <span>&nbsp;&nbsp;&nbsp;&nbsp;{{l[s.sL][21]}}</span>
-                  </td>
-                  <td>
-                  </td>
-                </tr>
-                <tr v-if="s.nP==3">
-                  <td>
-                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
-                      :title="l[s.sL][32] + ' ' + l[s.sL][21]" v-model.number="s.ncpd" disabled>
-                  </td>
-                  <td>
-                  </td>
-                </tr>
-                <tr  v-if="s.nP==3">
-                  <td>
-                    <span>&nbsp;&nbsp;&nbsp;&nbsp;{{l[s.sL][22]}}</span>
-                  </td>
-                  <td>
-                  </td>
-                </tr>
-                <tr v-if="s.nP==3">
-                  <td>
-                    <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align" type="number"
-                      :title="l[s.sL][31] + ' ' + l[s.sL][22]" v-model.number="s.ncps" disabled>
-                  </td>
-                  <td>
-                  </td>
-                </tr>
-                
+                <template v-if="s.nP==1">
+                  <tr>
+                    <td>
+                      <span>{{l[s.sL][31]}}</span>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align"
+                        type="number" :title="l[s.sL][31]" v-model.number="s.ncs" disabled>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>{{l[s.sL][32]}}</span>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align"
+                        type="number" :title="l[s.sL][32]" v-model.number="s.ncp" disabled>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>{{l[s.sL][33]}}</span>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align"
+                        type="number" :title="l[s.sL][33]" v-model.number="s.cri" disabled>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>{{l[s.sL][34]}}</span>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align"
+                        type="number" :title="l[s.sL][34]" v-model.number="s.fr" disabled>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>{{l[s.sL][35]}}</span>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align"
+                        type="number" :title="l[s.sL][35]" v-model.number="s.fa" disabled>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>{{l[s.sL][36]}}</span>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align"
+                        type="number" :title="l[s.sL][36]" v-model.number="s.fpf" disabled>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+
+                </template>
+                <template v-else>
+
+                  <tr>
+                    <td>
+                      <span>{{l[s.sL][21]}}</span>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>&nbsp;&nbsp;&nbsp;&nbsp;{{l[s.sL][31]}}</span>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align"
+                        type="number" :title="l[s.sL][31]" v-model.number="s.ncsd" disabled>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>&nbsp;&nbsp;&nbsp;&nbsp;{{l[s.sL][32]}}</span>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align"
+                        type="number" :title="l[s.sL][32]" v-model.number="s.ncpd" disabled>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>&nbsp;&nbsp;&nbsp;&nbsp;{{l[s.sL][33]}}</span>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align"
+                        type="number" :title="l[s.sL][33]" v-model.number="s.crid" disabled>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>&nbsp;&nbsp;&nbsp;&nbsp;{{l[s.sL][34]}}</span>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align"
+                        type="number" :title="l[s.sL][34]" v-model.number="s.frd" disabled>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>&nbsp;&nbsp;&nbsp;&nbsp;{{l[s.sL][35]}}</span>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align"
+                        type="number" :title="l[s.sL][35]" v-model.number="s.fad" disabled>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>&nbsp;&nbsp;&nbsp;&nbsp;{{l[s.sL][36]}}</span>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align"
+                        type="number" :title="l[s.sL][36]" v-model.number="s.fpfd" disabled>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+
+
+                  <tr>
+                    <td>
+                      <span>{{l[s.sL][22]}}</span>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>&nbsp;&nbsp;&nbsp;&nbsp;{{l[s.sL][31]}}</span>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align"
+                        type="number" :title="l[s.sL][31]" v-model.number="s.ncss" disabled>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>&nbsp;&nbsp;&nbsp;&nbsp;{{l[s.sL][32]}}</span>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align"
+                        type="number" :title="l[s.sL][32]" v-model.number="s.ncps" disabled>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>&nbsp;&nbsp;&nbsp;&nbsp;{{l[s.sL][33]}}</span>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align"
+                        type="number" :title="l[s.sL][33]" v-model.number="s.cris" disabled>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>&nbsp;&nbsp;&nbsp;&nbsp;{{l[s.sL][34]}}</span>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align"
+                        type="number" :title="l[s.sL][34]" v-model.number="s.frs" disabled>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>&nbsp;&nbsp;&nbsp;&nbsp;{{l[s.sL][35]}}</span>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align"
+                        type="number" :title="l[s.sL][35]" v-model.number="s.fas" disabled>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>&nbsp;&nbsp;&nbsp;&nbsp;{{l[s.sL][36]}}</span>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="w3-bar-item w3-input w3-border w3-border-black w3-round w3-right-align"
+                        type="number" :title="l[s.sL][36]" v-model.number="s.fpfs" disabled>
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                </template>
               </table>
             </div>
           </div>

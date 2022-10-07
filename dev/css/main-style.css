@@ -129,3 +129,27 @@ table.inp-table tr td {
 }
 
 
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 4px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: indigo; 
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: blueviolet; 
+}
